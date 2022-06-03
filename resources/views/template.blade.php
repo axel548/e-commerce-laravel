@@ -9,27 +9,12 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href=" {{ asset('css/app.css') }} ">
+   {{-- <script src=" {{ asset('js/app.js') }} "></script> --}}
 </head>
 
 <body>
     <div class="container px-4 mx-auto">
-        <header class="flex justify-between items-center py-4">
-            <div class="flex items-center flex-grow gap-4">
-                <a href=" {{ route('products.home') }} ">
-                    <img src=" {{ asset('images/logo.png') }} " alt="Logo" class="h-12">
-                </a>
-                <form action=" {{ route('products.home') }} " method="GET" class="flex-grow">
-                    <input type="text" name="search" placeholder="Buscar" value=" {{ request('search') }} "
-                        class="border border-gray-200 rounded py-2 px-4 w-1/2">
-                </form>
-            </div>
-
-            @auth
-                <a href=" {{ route('dashboard') }} ">Dashboard</a>
-            @else
-                <a href=" {{ route('login') }} ">Login</a>
-            @endauth
-        </header>
+        @include('partials.header')
 
         <div class="opacity-60 h-px mb-8" style="
                 background: linear-gradient(to right,
@@ -41,6 +26,12 @@
             ">
 
         </div>
+
+        @if ($message = Session::get('success'))
+            @include('partials.msg_success')
+        @elseif($message = Session::get('error'))
+            @include('partials.msg_error')
+        @endif
 
         @yield('content')
 
