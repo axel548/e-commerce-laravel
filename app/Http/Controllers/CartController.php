@@ -10,14 +10,20 @@ class CartController extends Controller
     public function cartList()
     {
         $cartItems = \Cart::getContent();
-        // dd($cartItems);
+        // dd(count($cartItems));
         return view('cart.cart', compact('cartItems'));
+    }
+
+    public function checkout()
+    {
+        $cartItems = \Cart::getContent();
+        // dd(count($cartItems));
+        return view('cart.client_information', compact('cartItems'));
     }
 
 
     public function addToCart(Request $request)
     {
-        // dd($request->all());
         \Cart::add([
                 'id' => $request->id,
                 'name' => $request->name,
@@ -37,7 +43,7 @@ class CartController extends Controller
         // session()->flash('error', 'Product isn\'t Added to Cart!');
 
         // return redirect()->route('cart.list');
-        return redirect()->route('products.home');
+        return redirect()->route('cart.list');
     }
 
     public function updateCart(Request $request)
@@ -46,8 +52,9 @@ class CartController extends Controller
             $request->id,
             [
                 'quantity' => [
-                    'relative' => false,
-                    'value' => $request->quantity
+                    'relative' => true,
+                    'value' => ($request->tipo == 'suma')? $request->quantity + 1 : $request->quantity - 1
+
                 ],
             ]
         );
@@ -73,4 +80,5 @@ class CartController extends Controller
 
         return redirect()->route('cart.list');
     }
+
 }
