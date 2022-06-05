@@ -28,20 +28,29 @@ class ProductsController extends Controller
         return back();
     }
 
-    public function create(){
-        return view('products.create');
+    public function create(Products $product){
+        return view('products.create', compact('product'));
     }
 
     public function edit($id){
         $product = Products::findOrFail($id);
+        // dd($product);
         return view('products.edit', compact('product'));
     }
 
-    public function store(Products $product){
-
+    public function store(Request $request){
+        $request->validate([
+            'name' => 'required',
+            'price' => 'required',
+            'weight' => 'required',
+            'image' => 'required',
+            'category' => 'required',
+            'stock' => 'required',
+            'description' => 'required',
+        ]);
     }
 
-    public function update(Products $product){
+    public function update(Request $request){
 
     }
 }

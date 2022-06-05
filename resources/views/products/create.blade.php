@@ -14,7 +14,7 @@
                     </h1>
                     <div class="flex justify-center">
                         <div class="block p-6 rounded-lg shadow-lg bg-white max-w-md">
-                            <form action=" {{ route('products.store') }} " method="POST">
+                            <form action=" {{ route('products.store') }} " method="POST" >
                                 @csrf
                                 @include('products._form')
                             </form>

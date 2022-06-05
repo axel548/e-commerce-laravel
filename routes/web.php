@@ -22,7 +22,7 @@ Route::get('/crear', [ProductsController::class, 'create'])->name('products.crea
 Route::get('/products', [ProductsController::class, 'list'])->middleware(['auth'])->name('products.list');
 
 Route::post('/create', [ProductsController::class, 'store'])->name('products.store');
-Route::put('/update:{id}', [ProductsController::class, 'update'])->name('products.update');
+Route::put('/update', [ProductsController::class, 'update'])->name('products.update');
 Route::delete('/delete:{id}', [ProductsController::class, 'destroy'])->name('products.delete');
 
 
