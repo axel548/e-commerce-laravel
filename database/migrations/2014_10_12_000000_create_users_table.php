@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('billing_address')->nullable();
             $table->string('default_shipping_address')->nullable();
             $table->string('country')->nullable();
-            $table->bigInteger('phone')->nullable();
+            $table->string('phone')->nullable();
             $table->string('user_type')->default(2);
             $table->rememberToken();
             $table->timestamps();

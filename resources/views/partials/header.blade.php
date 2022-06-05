@@ -26,7 +26,8 @@
     @auth
         <a href=" {{ route('dashboard') }} ">Dashboard</a>
     @else
-        <a href=" {{ route('login') }} ">Login</a>
+        <a href=" {{ route('login') }} " class="mr-2">Login</a>
+        <a href=" {{ route('register') }} " class="mr-2">Register</a>
     @endauth
 
 

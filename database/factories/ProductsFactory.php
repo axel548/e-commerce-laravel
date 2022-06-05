@@ -24,7 +24,7 @@ class ProductsFactory extends Factory
             'weight' => $this->faker->randomElement(['23', '15', '34', '12', '3']),
             'description' => $this->faker->text(),
             'thumbnail' => Str::slug($sku),
-            'image' => Str::slug($sku),
+            'image' => 'https://cdn.lorem.space/images/pizza/.cache/640x480/pexels-andy-kuzma-2909821.jpg',
             'category' => $this->faker->randomElement(['Clothes', 'Electronics', 'Furniture', 'Shoes', 'Others']),
             'stock' => $this->faker->randomElement(['yes', 'no'])
         ];
