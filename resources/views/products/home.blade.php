@@ -52,4 +52,6 @@
     <p class="mt-3">
         {{ $products->links() }}
     </p>
+
+    {{-- @include('partials.testimonials') --}}
 @endsection
