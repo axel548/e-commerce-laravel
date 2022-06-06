@@ -8,8 +8,22 @@ use Illuminate\Support\Facades\DB;
 
 class ProductsController extends Controller
 {
-    public function index(){
-        $products = Products::orderBy('id')->paginate(10);
+    public function index(Request $request){
+        if ($request->b == "&") {
+            $search = (is_null($request->search)) ? "All" : $request->search;
+            if ($search !== "All") {
+                $products = Products::where('category', $request->search)->orderBy('id')->paginate(10);
+            }else{
+                $products = Products::orderBy('id')->paginate(10);
+            }
+        } else {
+            $search =  $request->search;
+            $products = Products::where('name', 'LIKE', "%{$search}%")
+                ->orderBy('id')
+                ->paginate(10);
+        }
+
+
         return view('products.home', compact('products'));
     }
 

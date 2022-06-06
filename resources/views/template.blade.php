@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href=" {{ asset('images/logo.png') }}  ">
     <!-- Styles -->
     <link rel="stylesheet" href=" {{ asset('css/app.css') }} ">
+    {{-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" /> --}}
    {{-- <script src=" {{ asset('js/app.js') }} "></script> --}}
 </head>
 
@@ -37,6 +38,7 @@
 
     </div>
     @include('partials.footer')
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 </body>
 
 </html>

@@ -41,4 +41,14 @@ Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear'
 
 Route::get('checkout', [CartController::class, 'checkout'])->middleware(['auth'])->name('checkout');
 
+
+
+Route::get('/quienessomos/mision-vision', function (){
+    return view('partials.whoweare');
+})->name('weare.misionvision');
+Route::get('/quienessomos/business-description', function (){
+    return view('partials.description');
+})->name('weare.description');
+
+
 require __DIR__.'/auth.php';
