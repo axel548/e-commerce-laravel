@@ -55,7 +55,7 @@
                                                         </button>
                                                     </form>
                                                 </div>
-                                                <img src="https://cdn.lorem.space/images/furniture/.cache/640x480/lennon-cheng-3FmDZJtF4ho-unsplash.jpg"
+                                                <img src="{{ $cart->attributes['image'] }}"
                                                     alt="product_image" class="w-24">
                                                 <p class="ml-5 mt-5 mb-5 text-lg">
                                                     {{ $cart->name }}
