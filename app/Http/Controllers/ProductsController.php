@@ -53,6 +53,7 @@ class ProductsController extends Controller
     }
 
     public function store(Request $request){
+        // dd($request->all());
         $request->validate([
             'name' => 'required',
             'price' => 'required',
@@ -62,9 +63,29 @@ class ProductsController extends Controller
             'stock' => 'required',
             'description' => 'required',
         ]);
+        // Products::create([
+        //     'name' => $request,
+        //     'price' => 'required',
+        //     'weight' => 'required',
+        //     'image' => 'required',
+        //     'category' => 'required',
+        //     'stock' => 'required',
+        //     'description' => 'required',
+        // ]);
     }
 
     public function update(Request $request){
 
+        $product = Products::findOrFail($request->id);
+        $product->name = $request->name;
+        $product->price = $request->price;
+        $product->weight = $request->weight;
+        $product->image = $request->image;
+        $product->category = $request->category;
+        $product->stock = $request->stock;
+        $product->description = $request->description;
+        $product->save();
+
+        return redirect()->route('products.list');
     }
 }

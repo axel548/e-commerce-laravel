@@ -57,7 +57,7 @@
                                                 </div>
                                                 <img src="{{ $cart->attributes['image'] }}"
                                                     alt="product_image" class="w-24">
-                                                <p class="ml-5 mt-5 mb-5 text-lg">
+                                                <p class="ml-5 mt-5 mb-5 text-lg truncate">
                                                     {{ $cart->name }}
                                                 </p>
                                             </div>

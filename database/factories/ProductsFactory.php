@@ -25,7 +25,8 @@ class ProductsFactory extends Factory
             'description' => $this->faker->text(),
             'thumbnail' => Str::slug($sku),
             'image' => 'https://cdn.lorem.space/images/pizza/.cache/640x480/pexels-andy-kuzma-2909821.jpg',
-            'category' => $this->faker->randomElement(['Clothes', 'Electronics', 'Furniture', 'Shoes', 'Others']),
+            'category' => $this->faker->randomElement(['Hombres', 'Mujeres', 'Deportivos', 'Niñas y Niños']),
+            // 'category' => $this->faker->randomElement(['Clothes', 'Electronics', 'Furniture', 'Shoes', 'Others']),
             'stock' => $this->faker->randomElement(['yes', 'no'])
         ];
     }

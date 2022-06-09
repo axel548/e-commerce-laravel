@@ -28,9 +28,9 @@
                         <div class="lg:pl-12">
                             <h2 class="text-3xl font-bold mb-6">Descripción del Negocio</h2>
                             <p class="mb-6 pb-2 lg:pb-0">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, sint, repellat
-                                vel quo quisquam accusamus in qui at ipsa enim quibusdam illo laboriosam omnis.
-                                Labore itaque illum distinctio eum neque!
+                                Somos perfectamente conscientes de que nuestros productos deben ser seleccionados con el
+                                mayor cuidado, puesto que nuestros clientes necesitan el mayor confort y seguridad en cada
+                                una de sus aventuras.
                             </p>
 
                             <div class="flex flex-col md:flex-row md:justify-around xl:justify-start mb-6 mx-auto">
@@ -40,7 +40,7 @@
                                             d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                         </path>
                                     </svg>
-                                    Best team
+                                    Mejor equipo
                                 </p>
 
                                 <p class="flex items-center mb-4 md:mb-2 lg:mb-0 mx-auto md:mx-0 xl:mr-20">
@@ -49,7 +49,7 @@
                                             d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                         </path>
                                     </svg>
-                                    Best quality
+                                    Mejor calidad
                                 </p>
 
                                 <p class="flex items-center mb-2 lg:mb-0 mx-auto md:mx-0">
@@ -58,20 +58,14 @@
                                             d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z">
                                         </path>
                                     </svg>
-                                    Best experience
+                                    Mejor experiencia
                                 </p>
                             </div>
 
                             <p>
-                                Duis sagittis, turpis in ullamcorper venenatis, ligula nibh porta dui, sit amet
-                                rutrum enim massa in ante. Curabitur in justo at lorem laoreet ultricies. Nunc
-                                ligula felis, sagittis eget nisi vitae, sodales vestibulum purus. Vestibulum nibh
-                                ipsum, rhoncus vel sagittis nec, placerat vel justo. Duis faucibus sapien eget
-                                tortor finibus, a eleifend lectus dictum. Cras tempor convallis magna id rhoncus.
-                                Suspendisse potenti. Nam mattis faucibus imperdiet. Proin tempor lorem at neque
-                                tempus aliquet. Phasellus at ex volutpat, varius arcu id, aliquam lectus.
-                                Vestibulum mattis felis quis ex pharetra luctus. Etiam luctus sagittis massa, sed
-                                iaculis est vehicula ut.
+                                El mayor secreto para el buen funcionamiento, es la selección de los mejores proveedores y
+                                una atención al cliente super especializada, puesto que casi todo el equipo que trabaja en
+                                esta empresa son amantes y practicantes habituales.
                             </p>
                         </div>
                     </div>

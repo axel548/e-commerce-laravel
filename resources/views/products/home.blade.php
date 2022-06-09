@@ -15,35 +15,35 @@
                     </form>
 
                     <form action=" {{ route('products.home') }} " method="GET">
-                        <input type="hidden" name="search" value="Clothes">
+                        <input type="hidden" name="search" value="Hombres">
                         <input type="hidden" name="b" value="&">
                         <button type="submit"
-                            class=" inline-block px-6 py-2.5 bg-amber-600 text-white font-medium text-xs leading-tight uppercase hover:bg-amber-700 focus:bg-amber-700 focus:outline-none focus:ring-0 active:bg-amber-800 transition duration-150 ease-in-out">Clothes</button>
+                            class=" inline-block px-6 py-2.5 bg-amber-600 text-white font-medium text-xs leading-tight uppercase hover:bg-amber-700 focus:bg-amber-700 focus:outline-none focus:ring-0 active:bg-amber-800 transition duration-150 ease-in-out">Hombres</button>
                     </form>
                     <form action=" {{ route('products.home') }} " method="GET">
-                        <input type="hidden" name="search" value="Electronics">
+                        <input type="hidden" name="search" value="Mujeres">
                         <input type="hidden" name="b" value="&">
                         <button type="submit"
-                            class=" inline-block px-6 py-2.5 bg-amber-600 text-white font-medium text-xs leading-tight uppercase hover:bg-amber-700 focus:bg-amber-700 focus:outline-none focus:ring-0 active:bg-amber-800 transition duration-150 ease-in-out">Electronics</button>
+                            class=" inline-block px-6 py-2.5 bg-amber-600 text-white font-medium text-xs leading-tight uppercase hover:bg-amber-700 focus:bg-amber-700 focus:outline-none focus:ring-0 active:bg-amber-800 transition duration-150 ease-in-out">Mujeres</button>
                     </form>
 
                     <form action=" {{ route('products.home') }} " method="GET">
-                        <input type="hidden" name="search" value="Furniture">
+                        <input type="hidden" name="search" value="Deportivos">
                         <input type="hidden" name="b" value="&">
                         <button type="submit"
-                            class=" inline-block px-6 py-2.5 bg-amber-600 text-white font-medium text-xs leading-tight uppercase hover:bg-amber-700 focus:bg-amber-700 focus:outline-none focus:ring-0 active:bg-amber-800 transition duration-150 ease-in-out">Furniture</button>
+                            class=" inline-block px-6 py-2.5 bg-amber-600 text-white font-medium text-xs leading-tight uppercase hover:bg-amber-700 focus:bg-amber-700 focus:outline-none focus:ring-0 active:bg-amber-800 transition duration-150 ease-in-out">Deportivos</button>
                     </form>
-                    <form action=" {{ route('products.home') }} " method="GET">
+                    {{-- <form action=" {{ route('products.home') }} " method="GET">
                         <input type="hidden" name="search" value="Shoes">
                         <input type="hidden" name="b" value="&">
                         <button type="submit"
                             class=" inline-block px-6 py-2.5 bg-amber-600 text-white font-medium text-xs leading-tight uppercase hover:bg-amber-700 focus:bg-amber-700 focus:outline-none focus:ring-0 active:bg-amber-800 transition duration-150 ease-in-out">Shoes</button>
-                    </form>
+                    </form> --}}
                     <form action=" {{ route('products.home') }} " method="GET">
-                        <input type="hidden" name="search" value="Others">
+                        <input type="hidden" name="search" value="Niñas y Niños">
                         <input type="hidden" name="b" value="&">
                         <button type="submit"
-                            class=" rounded-r inline-block px-6 py-2.5 bg-amber-600 text-white font-medium text-xs leading-tight uppercase hover:bg-amber-700 focus:bg-amber-700 focus:outline-none focus:ring-0 active:bg-amber-800 transition duration-150 ease-in-out">Others</button>
+                            class=" rounded-r inline-block px-6 py-2.5 bg-amber-600 text-white font-medium text-xs leading-tight uppercase hover:bg-amber-700 focus:bg-amber-700 focus:outline-none focus:ring-0 active:bg-amber-800 transition duration-150 ease-in-out">Niñas y Niños</button>
                     </form>
 
                 </div>

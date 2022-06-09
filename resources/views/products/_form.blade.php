@@ -1,3 +1,5 @@
+<input type="hidden" name="id" value="{{ old('id', $product->id) }}">
+
 <div class="form-group mb-6">
     <label for="name" class="form-label inline-block mb-2 text-gray-700">Name</label>
     <span class="text-xs text-red-600"> @error('name')
@@ -116,11 +118,11 @@
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
         id="category" name="category">
         <option>Select an option</option>
-        <option value="2" @if($product->category == "Clothes") selected  @endif>Clothes</option>
-        <option value="3" @if($product->category == "Electronics") selected  @endif>Electronics</option>
-        <option value="4" @if($product->category == "Furniture") selected  @endif>Furniture</option>
-        <option value="4" @if($product->category == "Shoes") selected  @endif>Shoes</option>
-        <option value="4" @if($product->category == "Others") selected  @endif>Others</option>
+        <option value="Hombres" @if($product->category == "Hombres") selected  @endif>Hombres</option>
+        <option value="Mujeres" @if($product->category == "Mujeres") selected  @endif>Mujeres</option>
+        <option value="Deportivos" @if($product->category == "Deportivos") selected  @endif>Deportivos</option>
+        <option value="Niñas y Niños" @if($product->category == "Niñas y Niños") selected  @endif>Niñas y Niños</option>
+        {{-- <option value="4" @if($product->category == "Others") selected  @endif>Others</option> --}}
     </select>
 </div>
 <div class="form-group mb-6">
@@ -145,8 +147,8 @@
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
         id="stock" name="stock">
         <option> Select an option</option>
-        <option value="1" @if($product->stock == "yes") selected  @endif>Yes</option>
-        <option value="2" @if($product->stock == "no") selected  @endif>No</option>
+        <option value="yes" @if($product->stock == "yes") selected  @endif>Yes</option>
+        <option value="no" @if($product->stock == "no") selected  @endif>No</option>
     </select>
 </div>
 
